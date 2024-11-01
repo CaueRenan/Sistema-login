@@ -42,6 +42,7 @@ export function AuthProvider({ children }: IAuthProviderProps): JSX.Element {
     if (storeUser && storeUser.password === password) {
       setUser(storeUser);
       localStorage.setItem('user', JSON.stringify(storeUser));
+      alert('Você está logado!');
       return true;
     } else if (!storeUser) {
       alert('Usuário invalido');
