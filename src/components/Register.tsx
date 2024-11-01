@@ -17,7 +17,10 @@ export function Register(): JSX.Element {
         valueInputUsername={username}
         valueInputPassword={password}
         btnText="Registrar"
-        onSubmit={() => register(username, password)}
+        onSubmit={() => {
+          console.log(username, password);
+          register(username, password);
+        }}
       />
     </>
   );

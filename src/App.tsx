@@ -9,7 +9,7 @@ export default function App(): JSX.Element {
 
   return (
     <>
-      {!user.username ? (
+      {!user ? (
         <div>
           <Login />
           <Register />

@@ -1,12 +1,12 @@
 import React, { ReactNode, createContext, useEffect, useState } from 'react';
 
-type user = {
+type User = {
   username: string;
   password: string;
 };
 
 interface IAuthContextProps {
-  user: user;
+  user: User | null;
   register: (username: string, password: string) => void;
   login: (username: string, password: string) => void;
   logout: () => void;
@@ -18,7 +18,7 @@ interface IAuthProviderProps {
 export const AuthContext = createContext({} as IAuthContextProps);
 
 export function AuthProvider({ children }: IAuthProviderProps): JSX.Element {
-  const [user, setUser] = useState({} as user);
+  const [user, setUser] = useState<User | null>(null);
 
   useEffect(() => {
     const storedUser = localStorage.getItem('user');
@@ -26,7 +26,9 @@ export function AuthProvider({ children }: IAuthProviderProps): JSX.Element {
   }, []);
 
   const register = (username: string, password: string) => {
-    const existingUser = localStorage.getItem(username);
+    const existingUser: User = JSON.parse(
+      localStorage.getItem(username) as string,
+    );
     if (existingUser) {
       alert('Usuario já existe!');
       return false;
@@ -54,7 +56,7 @@ export function AuthProvider({ children }: IAuthProviderProps): JSX.Element {
   };
 
   const logout = () => {
-    setUser({} as user);
+    setUser(null);
     localStorage.removeItem('user');
   };
 
