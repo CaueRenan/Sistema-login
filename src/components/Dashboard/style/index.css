@@ -1,0 +1,29 @@
+.welcome {
+  padding: 1em;
+  border-radius: 10px;
+
+  background-color: #3C70C4;
+  color: #EEEEEE;
+
+  letter-spacing: 3px;
+}
+
+.container_dashboard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+
+}
+
+.container_dashboard button {
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+
+  background-color: #CB5757;
+  color: #F5F5F5;
+
+  font-size: larger;
+}

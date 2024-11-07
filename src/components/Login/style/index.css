@@ -1,0 +1,62 @@
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card_login_button {
+  padding: 40px;
+  margin-right: 15px;
+  border-radius: 20px;
+
+  background-color: #0F2846;
+  color: #F0EAEA;
+
+  font-size: 30pt;
+  font-weight: bolder;
+  letter-spacing: 10px;
+
+  cursor: pointer;
+
+}
+
+.card_login_figure {
+  position: absolute;
+
+  margin-top: -3em;
+  margin-left: -1em;
+
+
+  background-color: #0F2846;
+  color: #E2E2E2;
+
+  display: flex;
+
+  cursor: pointer;
+}
+
+
+.container_login {
+  height: 16em;
+  width: 18em;
+  border: none;
+  border-radius: 15px 15px 0 0;
+
+  background-color: #0F2846;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 4em;
+}
+
+.container_login .container_login_tilte {
+  color: #F0EAEA;
+  letter-spacing: 5px;
+}
+
+.container_login .popup {
+  margin-right: 40em;
+
+}

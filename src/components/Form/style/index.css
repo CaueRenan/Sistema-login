@@ -1,0 +1,67 @@
+.container_form {
+  width: 100%;
+  padding-left: 1.4em;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+
+  gap: 20px;
+}
+
+.container_form span {
+  position: absolute;
+  margin-left: 4px;
+
+  color: #757575;
+}
+
+.span_name {
+  margin-bottom: 3em;
+}
+
+.span_password {
+  margin-top: 3px;
+}
+
+.container_form input {
+  height: 2.3em;
+  border: none;
+  border-radius: 5px;
+  padding-left: 2em;
+}
+
+.container_password {
+  display: flex;
+  align-items: center;
+}
+
+.container_password figure {
+  position: absolute;
+  margin-top: 4px;
+  margin-left: 14em;
+
+  color: #ffffff;
+
+  cursor: pointer;
+}
+
+.container_form button {
+  position: absolute;
+
+  width: 9em;
+  padding: 10px;
+  border: none;
+  border-radius: 0 0 15px 15px;
+  margin-top: 6.6em;
+  margin-left: -23px;
+
+  background-color: #898989;
+  color: #f6f6f6;
+
+  font-size: xx-large;
+  letter-spacing: 5px;
+
+  cursor: pointer;
+}

@@ -1,0 +1,66 @@
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card_register_button {
+  padding: 40px;
+  border-radius: 20px;
+  margin-left: 15px;
+
+
+  background-color: #3B4E5A;
+  color: #F1F1F1;
+
+  font-size: 30pt;
+
+  font-weight: bolder;
+  letter-spacing: 10px;
+
+  cursor: pointer;
+}
+
+.container_register {
+  height: 16em;
+  width: 18em;
+  border: none;
+  border-radius: 15px 15px 0 0;
+
+  background-color: #3B4E5A;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 4em;
+}
+
+.card_register_figure {
+  margin-bottom: 4em;
+  margin-left: -1em;
+
+  display: flex;
+
+  background-color: #3B4E5A;
+  color: #DADADA;
+}
+
+.container_register .container_register_tilte {
+  color: #F0EAEA;
+  letter-spacing: 5px;
+}
+
+.password_requirements {
+  position: absolute;
+
+  padding: 2em;
+  border-radius: 10px;
+  margin-left: 33em;
+
+  background-color: rgb(211, 138, 1);
+}
+
+.container_register .popup {
+  margin-left: 42em;
+}
